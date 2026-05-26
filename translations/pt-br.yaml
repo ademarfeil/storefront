@@ -82,6 +82,7 @@ storefront:
     customers: Clientes
     orders: Pedidos
     networks: Redes
+    promotions: Promoções
     settings: Configurações
     launch-app: Abrir App
   component:
@@ -408,6 +409,9 @@ storefront:
               tax-percentage-input-label: Percentual de Imposto
               tax-percentage-input-help-text: Percentual do imposto sobre vendas a
                 ser aplicado aos pedidos.
+              enable-minimum-order-amount: Ativar valor mínimo do pedido
+              minimum-order-amount-input-label: Valor Mínimo do Pedido
+              minimum-order-amount-input-help-text: O valor mínimo do pedido necessário para o checkout.
               auto-accept-incoming-orders: Aceitar automaticamente pedidos recebidos
               auto-dispatch-orders: Despachar pedidos automaticamente
               require-proof-of-delivery: Exigir comprovante de entrega
@@ -552,7 +556,7 @@ storefront:
         invalid-warning: Entrada de status personalizado inválida.
         change-order: Alterar motorista do pedido
         assign-order: Atribuir motorista ao pedido
-        assign-success: '{orderId} motorista atribuído atualizado.'
+        assign-success: '{orderId} motor driver atualizado.'
         order-title: Etiqueta do Pedido
         waypoint-title: Etiqueta do Ponto de Passagem
         proof-of-delivery: Comprovante de Entrega
@@ -675,6 +679,9 @@ storefront:
       tax-percentage: Porcentagem do imposto
       tax-percentage-help-text: A porcentagem do imposto sobre vendas a ser aplicada
         aos pedidos.
+      enable-minimum-order-amount: Ativar valor mínimo do pedido
+      minimum-order-amount: Valor Mínimo do Pedido
+      minimum-order-amount-help-text: O valor mínimo do pedido necessário para o checkout.
       auto-accept-incoming-order: Aceitar automaticamente pedidos recebidos
       auto-dispatch-order: Despachar pedidos automaticamente
       require-proof-of-delivery: Exigir comprovante de entrega
@@ -730,3 +737,24 @@ storefront:
       storefront-create-success: Sua nova vitrine foi criada!
   application:
     launch-app: Abrir aplicativo
+  promotions:
+    title: Promoções
+    push-notifications:
+      tab-title: Notificações
+      header: Enviar Notificações 
+      description: Envie notificações promocionais para seus clientes
+      title-label: Título da Notificação
+      title-placeholder: Digite o título da notificação
+      title-help-text: O título que aparecerá na notícia push
+      body-label: Corpo da Notificação
+      body-placeholder: Digite a mensagem da notificação
+      body-help-text: O conteúdo da mensagem que será enviado aos clientes
+      select-all-customers: Selecionar Todos os Clientes
+      select-all-customers-help-text: Enviar notificação para todos os clientes desta loja
+      customers-label: Selecionar Clientes
+      customers-placeholder: Selecione os clientes para enviar a notificação
+      send-button: Enviar Notificação
+      validation-title-body-required: Por favor, insira o título e o corpo da notificação
+      validation-customers-required: Por favor, selecione pelo menos um cliente para enviar a notificação
+      notification-sent-success: Notificação push enviada com sucesso para os clientes selecionados
+      notification-sent-error: Falha ao enviar notificação push. Por favor, tente novamente.
